@@ -637,12 +637,8 @@ public class CameraActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(Void x) {
             progressDialog.dismiss();
-           /* Intent i = new Intent(MediaStore.Video.this, VideoUpload.class);
-            i.putExtra("videopath", value);
-            i.putExtra("id", id);
-            i.putExtra("name", name);
-            i.putExtra("photo", photo);
-            startActivity(i);*/
+            Intent i = new Intent(CameraActivity.this, RegisterVideoPreviewActivity.class);
+            startActivity(i);
             finish();
         }
     }
