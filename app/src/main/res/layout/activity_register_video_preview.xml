@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register_video_preview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="RegisterVideoPreviewActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="true"
+        android:id="@+id/register_container"
+        android:layout_height="250dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            app:srcCompat="@drawable/spaus_register_camera"
+            android:layout_alignParentTop="true"
+            android:id="@+id/imageView11"
+            android:background="@android:color/black"
+            android:scaleType="centerCrop"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            android:alpha="0.6">
+
+        </RelativeLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:clickable="true"
+            android:id="@+id/floatingActionButton"
+            app:backgroundTint="@android:color/holo_blue_light"
+            app:fabSize="normal"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:elevation="19dp"
+            app:srcCompat="@drawable/ic_videocam_white_48dp"
+            android:layout_centerVertical="false"
+            android:layout_centerHorizontal="false"
+            android:layout_centerInParent="true"
+            android:drawingCacheQuality="auto" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/bottom_container"
+        android:layout_below="@+id/register_container"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/video_not_found"
+            android:id="@+id/imageViewVideonotFound"
+            android:visibility="visible"
+            android:layout_centerInParent="true" />
+
+        <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/gridviewVideoLocal"
+            android:numColumns="auto_fit"
+            android:columnWidth="120dp"
+            android:verticalSpacing="2dp"
+            android:horizontalSpacing="2dp"
+            android:stretchMode="columnWidth"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:smoothScrollbar="true" />
+    </RelativeLayout>
+</RelativeLayout>

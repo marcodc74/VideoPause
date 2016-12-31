@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/grid_item_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10px"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_business_center_white_48dp"
+        android:scaleType="fitXY">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/grid_item_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@+id/label"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/grid_item_image"
+        tools:text="123"
+        android:textColor="@android:color/white"
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:textSize="10sp">
+    </TextView>
+
+</RelativeLayout>
