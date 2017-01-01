@@ -19,7 +19,6 @@ The project aims to make available to all video recording with the ability to <s
   <img src="https://github.com/marcodc74/VideoPause/blob/master/device-2016-12-31-175523.png" width="150"/>
   <img src="https://github.com/marcodc74/VideoPause/blob/master/device-2016-12-31-175553.png" width="150"/>
   <img src="https://github.com/marcodc74/VideoPause/blob/master/ezgif.com-video-to-gif.gif" alt="the result" width="150"/>
-<img src="https://github.com/marcodc74/VideoPause/blob/master/ezgif.com-video-to-gif.gif" alt="The result" />
 </p>
 
 
